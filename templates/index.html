@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add2Number</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/add2number" method="post">
+            <h1>Add 2 number's</h1>
+            <label for="number1">Value 1</label>
+            <input name="val1" type="number">
+            <label for="number1">Value 2</label>
+            <input name="val2" type="number">
+            <button type="submit">submit</button>
+        </form>
+        {% if value %}
+            <h1>Result : {{ value }}</h1>
+        {% endif %}
+    </div>
+</body>
+</html>
